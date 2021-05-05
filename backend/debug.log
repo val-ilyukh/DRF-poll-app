@@ -1,0 +1,1618 @@
+2021-05-05 12:05:49,219 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:05:55,285 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:05:57,654 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:05:57,654 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:06:02,803 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:06:02,803 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:06:40,629 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\settings.py changed, reloading.
+2021-05-05 12:06:41,439 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:06:50,832 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:06:50,832 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:06:57,835 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:06:57,835 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:08:08,655 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:08:09,525 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:08:12,896 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:08:12,896 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:08:17,988 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:08:17,988 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:09:35,632 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:09:36,429 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:09:42,718 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:09:42,718 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:09:47,392 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:09:47,392 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:10:19,256 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:10:20,079 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:10:25,606 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 274, in __iter__
+    self._fetch_all()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 73, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 513, in from_db
+    new = cls(*values)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py", line 26, in __init__
+    print(self.startDate)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query_utils.py", line 135, in __get__
+    instance.refresh_from_db(fields=[self.field_name])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 616, in refresh_from_db
+    db_instance_qs = self.__class__._base_manager.db_manager(using, hints=hints).filter(pk=self.pk)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 569, in _get_pk_val
+    return getattr(self, meta.pk.attname)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query_utils.py", line 133, in __get__
+    val = self._check_parent_chain(instance, self.field_name)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query_utils.py", line 150, in _check_parent_chain
+    return getattr(instance, link_field.attname)
+AttributeError: 'NoneType' object has no attribute 'attname'
+2021-05-05 12:10:25,606 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 274, in __iter__
+    self._fetch_all()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 73, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 513, in from_db
+    new = cls(*values)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py", line 26, in __init__
+    print(self.startDate)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query_utils.py", line 135, in __get__
+    instance.refresh_from_db(fields=[self.field_name])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 616, in refresh_from_db
+    db_instance_qs = self.__class__._base_manager.db_manager(using, hints=hints).filter(pk=self.pk)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 569, in _get_pk_val
+    return getattr(self, meta.pk.attname)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query_utils.py", line 133, in __get__
+    val = self._check_parent_chain(instance, self.field_name)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query_utils.py", line 150, in _check_parent_chain
+    return getattr(instance, link_field.attname)
+AttributeError: 'NoneType' object has no attribute 'attname'
+2021-05-05 12:10:25,880 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:10:25,880 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:11:20,246 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:11:21,057 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:11:25,660 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:11:27,630 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 274, in __iter__
+    self._fetch_all()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 73, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 513, in from_db
+    new = cls(*values)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py", line 26, in __init__
+    print(self.args.get('startDate'))
+AttributeError: 'Poll' object has no attribute 'args'
+2021-05-05 12:11:27,630 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 274, in __iter__
+    self._fetch_all()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 73, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 513, in from_db
+    new = cls(*values)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py", line 26, in __init__
+    print(self.args.get('startDate'))
+AttributeError: 'Poll' object has no attribute 'args'
+2021-05-05 12:11:27,840 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:11:27,840 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:12:08,802 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:12:09,609 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:12:11,701 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 274, in __iter__
+    self._fetch_all()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 73, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 513, in from_db
+    new = cls(*values)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py", line 26, in __init__
+    print(self.args[2])
+AttributeError: 'Poll' object has no attribute 'args'
+2021-05-05 12:12:11,701 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 274, in __iter__
+    self._fetch_all()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\query.py", line 73, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\db\models\base.py", line 513, in from_db
+    new = cls(*values)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py", line 26, in __init__
+    print(self.args[2])
+AttributeError: 'Poll' object has no attribute 'args'
+2021-05-05 12:12:11,903 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:12:11,903 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:12:45,072 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:12:45,891 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:12:48,242 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:12:48,242 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:13:02,554 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:13:03,425 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:13:04,558 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:13:04,558 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:17:36,736 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 12:17:37,546 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:17:46,966 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:17:46,966 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:17:55,327 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:17:55,327 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:18:33,105 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:18:38,051 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:18:38,051 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:18:44,432 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:18:44,432 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:19:13,408 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 12:19:14,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:19:18,711 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:19:18,711 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:22:21,206 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 12:22:22,052 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:26:45,109 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:26:51,301 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:26:51,301 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:27:09,758 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:27:09,758 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:56:33,342 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 12:56:34,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 12:56:39,010 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:56:39,010 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 12:56:42,666 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:56:42,666 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:57:04,376 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:57:04,376 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 12:59:52,607 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 12:59:53,462 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:00:06,236 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:00:09,292 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:00:09,292 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:00:29,789 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:00:29,789 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:00:53,869 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 13:00:54,729 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:00:58,732 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 121, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 146, in many_init
+    child_serializer = cls(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py", line 24, in __init__
+    print(self.data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 548, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 245, in data
+    if self.instance is not None and not getattr(self, '_errors', None):
+AttributeError: 'PollSerializer' object has no attribute 'instance'
+2021-05-05 13:00:58,732 django.request ERROR    Internal Server Error: /admin/polls
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py", line 18, in get
+    return Response(PollSerializer(Poll.objects.all(), many=True).data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 121, in __new__
+    return cls.many_init(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 146, in many_init
+    child_serializer = cls(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py", line 24, in __init__
+    print(self.data)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 548, in data
+    ret = super().data
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\serializers.py", line 245, in data
+    if self.instance is not None and not getattr(self, '_errors', None):
+AttributeError: 'PollSerializer' object has no attribute 'instance'
+2021-05-05 13:00:58,959 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:00:58,959 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:08:10,302 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 13:08:11,150 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:08:56,349 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:08:57,156 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:09:09,243 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:09:09,243 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:09:32,535 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:09:32,535 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:11:32,644 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 13:12:12,381 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:12:13,214 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:12:13,734 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:12:13,734 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:12:13,740 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:12:13,740 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:12:13,987 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:12:13,987 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:12:32,014 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:12:34,701 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:12:34,701 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:12:45,961 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:12:45,961 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:13:25,749 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:13:26,553 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:13:31,778 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:13:32,603 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:13:36,220 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:13:36,220 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:13:45,930 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:13:45,930 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:14:57,323 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:14:58,117 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:15:05,323 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:15:05,323 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:15:11,805 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:15:11,805 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:15:23,888 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:15:23,888 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:15:44,310 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:15:44,310 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:17:50,179 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:17:51,129 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:17:55,604 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:17:55,604 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:17:58,631 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:17:58,631 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:18:13,911 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:18:13,911 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:19:02,436 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:19:03,246 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:19:07,727 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:19:07,727 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:19:17,519 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:19:17,519 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:19:46,137 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:19:46,137 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:21:50,403 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:21:51,218 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:22:00,700 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:22:00,700 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:22:05,322 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:22:05,322 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:25:30,151 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 13:25:30,936 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:25:36,734 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:25:36,734 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:26:10,305 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:26:11,120 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:26:24,952 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:26:24,952 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:30:02,607 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 13:30:03,446 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:30:25,871 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:30:30,539 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:30:30,539 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:56:53,712 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 13:56:54,555 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:57:14,213 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:57:14,213 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:58:09,067 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 13:58:09,888 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 13:58:11,524 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:58:11,524 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 13:58:22,722 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 13:58:22,722 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 14:02:26,205 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:02:27,023 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:05:17,894 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:05:18,682 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:05:37,620 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 14:05:38,426 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:07:46,825 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 14:07:47,645 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:09:37,575 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:09:38,456 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:09:55,016 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:09:55,903 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:10:33,684 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 14:10:34,594 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:12:28,706 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 14:12:29,594 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:13:46,252 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 14:13:47,142 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:17:53,794 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 14:17:54,679 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:22:37,600 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:22:38,408 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:24:26,237 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:24:26,237 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:26:40,612 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:26:40,612 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:27:46,525 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:27:46,525 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:04,655 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:04,655 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:19,904 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:19,904 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:37,043 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:37,043 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:37,173 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:28:37,173 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:29:32,539 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:29:33,389 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:29:41,293 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:29:41,293 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:29:41,485 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 14:29:41,485 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 14:29:47,259 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:29:47,259 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:30:13,670 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:30:14,530 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:30:17,137 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:30:17,137 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:30:17,356 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 14:30:17,356 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 14:30:20,387 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:30:20,387 django.request WARNING  Bad Request: /admin/polls/22/questions
+2021-05-05 14:30:38,697 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:30:39,592 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:30:43,387 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:30:43,387 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:30:43,600 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 14:30:43,600 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 14:31:19,981 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:31:19,981 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:33:34,365 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:33:34,365 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 14:33:55,750 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 14:33:55,750 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 14:36:18,823 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:36:19,632 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 14:36:28,127 django.request WARNING  Bad Request: /admin/polls/23/questions
+2021-05-05 14:36:28,127 django.request WARNING  Bad Request: /admin/polls/23/questions
+2021-05-05 14:37:05,916 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 14:37:06,669 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:01:29,239 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 15:01:30,052 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:23:34,422 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 15:23:35,247 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:24:06,321 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 15:24:07,122 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:30:32,930 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 15:30:33,761 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:44:44,211 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:44:59,411 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 15:45:00,230 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:46:24,277 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 15:46:25,065 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:47:23,656 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 15:47:24,497 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:47:30,862 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:47:35,432 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 15:47:35,432 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 15:47:35,667 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 15:47:35,667 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 15:47:42,201 django.request WARNING  Bad Request: /admin/polls/23
+2021-05-05 15:47:42,201 django.request WARNING  Bad Request: /admin/polls/23
+2021-05-05 15:48:26,906 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 15:48:27,828 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:48:30,939 django.request ERROR    Internal Server Error: /admin/polls/23
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'backend.models.Response'>`
+2021-05-05 15:48:30,939 django.request ERROR    Internal Server Error: /admin/polls/23
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'backend.models.Response'>`
+2021-05-05 15:48:31,092 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 15:48:31,092 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 15:49:03,175 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 15:49:03,980 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:50:23,151 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 15:50:26,550 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 15:50:26,550 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 15:52:33,606 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 15:52:33,606 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 16:04:12,390 django.request ERROR    Internal Server Error: /admin/polls/23/questions/27
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 404, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'ListSerializer' is not JSON serializable
+2021-05-05 16:04:12,390 django.request ERROR    Internal Server Error: /admin/polls/23/questions/27
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 404, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'ListSerializer' is not JSON serializable
+2021-05-05 16:10:07,852 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 16:10:08,712 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 16:10:13,363 django.request ERROR    Internal Server Error: /admin/polls/23/questions/27
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 404, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'OptionSerializer' is not JSON serializable
+2021-05-05 16:10:13,363 django.request ERROR    Internal Server Error: /admin/polls/23/questions/27
+Traceback (most recent call last):
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 680, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 413, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 430, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 404, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "C:\Users\vilyu\Documents\python\pollapp\testenv\lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+  File "C:\Users\vilyu\AppData\Local\Programs\Python\Python36-32\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'OptionSerializer' is not JSON serializable
+2021-05-05 16:10:13,577 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 16:10:13,577 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 16:11:17,411 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 16:11:18,234 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 16:11:22,786 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 16:11:22,786 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 16:11:45,299 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 16:11:46,250 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 16:11:51,262 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 16:11:51,262 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 16:12:44,046 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 16:12:44,046 django.request WARNING  Method Not Allowed: /admin/polls/23/questions
+2021-05-05 16:19:49,418 django.request WARNING  Not Found: /polls/
+2021-05-05 16:19:49,418 django.request WARNING  Not Found: /polls/
+2021-05-05 16:36:45,155 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 16:36:45,952 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 16:37:02,575 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 16:37:02,575 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 16:38:20,338 django.request WARNING  Bad Request: /admin/polls/23/questions/25
+2021-05-05 16:38:20,338 django.request WARNING  Bad Request: /admin/polls/23/questions/25
+2021-05-05 16:38:39,622 django.request WARNING  Bad Request: /admin/polls/23/questions/25
+2021-05-05 16:38:39,622 django.request WARNING  Bad Request: /admin/polls/23/questions/25
+2021-05-05 17:11:45,527 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\models.py changed, reloading.
+2021-05-05 17:11:46,399 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:12:26,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:17:52,689 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:17:53,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:22:03,282 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:22:04,114 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:36:01,386 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:36:02,169 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:36:19,560 django.request WARNING  Not Found: /polls/23/questions/25
+2021-05-05 17:36:19,560 django.request WARNING  Not Found: /polls/23/questions/25
+2021-05-05 17:36:21,977 django.request WARNING  Not Found: /polls/23/
+2021-05-05 17:36:21,977 django.request WARNING  Not Found: /polls/23/
+2021-05-05 17:36:24,376 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:36:24,376 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:37:02,412 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:37:03,252 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:37:04,673 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:37:04,673 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:39:46,548 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:39:46,548 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:46:04,235 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:46:05,089 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:46:09,986 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:46:09,986 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:46:15,350 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:46:15,350 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:46:54,162 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:46:55,018 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:46:57,773 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:46:57,773 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:47:02,761 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:47:02,761 django.request WARNING  Bad Request: /polls/23
+2021-05-05 17:47:39,225 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 17:47:39,225 django.request WARNING  Method Not Allowed: /admin/polls/22/questions
+2021-05-05 17:47:45,564 django.request WARNING  Not Found: /admin/polls/
+2021-05-05 17:47:45,564 django.request WARNING  Not Found: /admin/polls/
+2021-05-05 17:48:18,354 django.request WARNING  Not Found: /admin/polls/25
+2021-05-05 17:48:18,354 django.request WARNING  Not Found: /admin/polls/25
+2021-05-05 17:49:11,105 django.request WARNING  Method Not Allowed: /admin/polls/20/questions
+2021-05-05 17:49:11,105 django.request WARNING  Method Not Allowed: /admin/polls/20/questions
+2021-05-05 17:51:06,801 django.request WARNING  Bad Request: /admin/polls/20/questions
+2021-05-05 17:51:06,801 django.request WARNING  Bad Request: /admin/polls/20/questions
+2021-05-05 17:52:49,889 django.request WARNING  Bad Request: /admin/polls/20/questions
+2021-05-05 17:52:49,889 django.request WARNING  Bad Request: /admin/polls/20/questions
+2021-05-05 17:53:17,710 django.request WARNING  Method Not Allowed: /admin/polls/20/questions
+2021-05-05 17:53:17,710 django.request WARNING  Method Not Allowed: /admin/polls/20/questions
+2021-05-05 17:55:32,329 django.request WARNING  Bad Request: /polls/20
+2021-05-05 17:55:32,329 django.request WARNING  Bad Request: /polls/20
+2021-05-05 17:56:46,701 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:56:47,591 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:56:51,012 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:56:51,012 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:56:55,279 django.request WARNING  Bad Request: /polls/20
+2021-05-05 17:56:55,279 django.request WARNING  Bad Request: /polls/20
+2021-05-05 17:59:02,813 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 17:59:03,668 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 17:59:09,258 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:59:09,258 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 17:59:12,405 django.request WARNING  Bad Request: /polls/20
+2021-05-05 17:59:12,405 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:00:01,257 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:00:01,257 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:03:01,442 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:03:01,442 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:03:15,864 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:03:15,864 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:03:29,923 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:03:29,923 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:03:57,277 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:03:57,277 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:04:30,622 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:04:30,622 django.request WARNING  Bad Request: /polls/20
+2021-05-05 18:04:43,376 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:04:44,229 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:09:26,227 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:09:26,227 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:09:50,321 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 18:09:51,157 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:09:54,134 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:09:54,134 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:09:54,364 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:09:54,364 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:10:21,523 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:10:22,350 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:10:27,022 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:10:27,022 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:10:27,230 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:10:27,230 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:13:44,160 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:13:45,000 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:13:46,550 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:13:46,550 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:13:46,776 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:13:46,776 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:14:20,114 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:14:20,903 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:16:33,561 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:16:34,337 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:16:38,567 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:16:38,567 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:16:38,809 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:16:38,809 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:17:42,152 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:17:42,974 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:17:44,063 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:17:44,063 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 18:17:44,283 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:17:44,283 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:18:48,576 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:18:49,413 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:18:50,215 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:18:50,215 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:19:33,338 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:19:34,150 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:19:35,639 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:19:35,639 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:20:15,395 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:20:16,206 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:20:20,764 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:20:20,764 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:47:51,808 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:47:51,808 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 18:49:05,020 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:49:05,831 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:50:53,749 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 18:50:54,503 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 18:51:34,410 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 18:51:35,219 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 19:00:11,165 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 19:00:12,019 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 19:01:37,256 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 19:01:38,111 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 19:03:50,758 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 19:03:51,581 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 19:11:16,876 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 19:11:17,682 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 19:11:45,849 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:11:45,849 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:11:46,142 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:46,142 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:46,318 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:46,318 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:46,471 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:11:46,471 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:11:46,632 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:11:46,632 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:11:46,778 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:11:46,778 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:11:46,922 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:46,922 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:47,149 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:47,149 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:47,299 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:47,299 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:47,482 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:11:47,482 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:20:51,984 django.request WARNING  Not Found: /admin/polls/
+2021-05-05 19:20:51,984 django.request WARNING  Not Found: /admin/polls/
+2021-05-05 19:20:55,747 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:20:55,747 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:21:39,104 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:21:39,104 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:23:27,204 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:23:27,204 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:24:04,643 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\serializers.py changed, reloading.
+2021-05-05 19:24:05,470 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 19:24:11,937 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:24:11,937 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:06,035 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:25:06,035 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:25:06,319 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:06,319 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:06,491 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:06,491 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:06,664 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:25:06,664 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:25:06,838 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:25:06,838 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:25:06,980 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:25:06,980 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:25:07,263 django.request WARNING  Bad Request: /admin/polls/25/questions
+2021-05-05 19:25:07,263 django.request WARNING  Bad Request: /admin/polls/25/questions
+2021-05-05 19:25:07,712 django.request WARNING  Bad Request: /admin/polls/25/questions
+2021-05-05 19:25:07,712 django.request WARNING  Bad Request: /admin/polls/25/questions
+2021-05-05 19:25:07,852 django.request WARNING  Bad Request: /admin/polls/25/questions
+2021-05-05 19:25:07,852 django.request WARNING  Bad Request: /admin/polls/25/questions
+2021-05-05 19:25:08,465 django.request WARNING  Not Found: /admin/polls/25/questions/12345
+2021-05-05 19:25:08,465 django.request WARNING  Not Found: /admin/polls/25/questions/12345
+2021-05-05 19:25:09,080 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:09,080 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:09,243 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:09,243 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:09,439 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:25:09,439 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:33,672 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:26:33,672 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:26:33,964 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:33,964 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:34,140 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:34,140 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:34,288 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:26:34,288 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:26:34,446 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:26:34,446 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:26:34,587 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:26:34,587 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:26:34,878 django.request WARNING  Bad Request: /admin/polls/26/questions
+2021-05-05 19:26:34,878 django.request WARNING  Bad Request: /admin/polls/26/questions
+2021-05-05 19:26:35,319 django.request WARNING  Bad Request: /admin/polls/26/questions
+2021-05-05 19:26:35,319 django.request WARNING  Bad Request: /admin/polls/26/questions
+2021-05-05 19:26:35,465 django.request WARNING  Bad Request: /admin/polls/26/questions
+2021-05-05 19:26:35,465 django.request WARNING  Bad Request: /admin/polls/26/questions
+2021-05-05 19:26:36,078 django.request WARNING  Not Found: /admin/polls/26/questions/12345
+2021-05-05 19:26:36,078 django.request WARNING  Not Found: /admin/polls/26/questions/12345
+2021-05-05 19:26:37,297 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:37,297 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:37,467 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:37,467 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:26:37,488 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:26:37,488 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:26:37,510 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:26:37,510 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:26:37,525 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:26:37,525 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:26:37,552 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:26:37,552 django.request WARNING  Not Found: /polls/27
+2021-05-05 19:27:39,604 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:27:39,604 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:27:39,886 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:27:39,886 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:27:40,063 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:27:40,063 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:27:40,208 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:27:40,208 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:27:40,370 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:27:40,370 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:27:40,508 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:27:40,508 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:27:40,793 django.request WARNING  Bad Request: /admin/polls/28/questions
+2021-05-05 19:27:40,793 django.request WARNING  Bad Request: /admin/polls/28/questions
+2021-05-05 19:27:41,238 django.request WARNING  Bad Request: /admin/polls/28/questions
+2021-05-05 19:27:41,238 django.request WARNING  Bad Request: /admin/polls/28/questions
+2021-05-05 19:27:41,383 django.request WARNING  Bad Request: /admin/polls/28/questions
+2021-05-05 19:27:41,383 django.request WARNING  Bad Request: /admin/polls/28/questions
+2021-05-05 19:27:42,015 django.request WARNING  Not Found: /admin/polls/28/questions/12345
+2021-05-05 19:27:42,015 django.request WARNING  Not Found: /admin/polls/28/questions/12345
+2021-05-05 19:27:43,920 django.request WARNING  Not Found: /polls/31
+2021-05-05 19:27:43,920 django.request WARNING  Not Found: /polls/31
+2021-05-05 19:27:43,927 django.request WARNING  Not Found: /polls/31
+2021-05-05 19:27:43,927 django.request WARNING  Not Found: /polls/31
+2021-05-05 19:27:43,936 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:27:43,936 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:27:43,951 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:27:43,951 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:27:43,974 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:27:43,974 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:27:43,989 django.request WARNING  Not Found: /polls/30
+2021-05-05 19:27:43,989 django.request WARNING  Not Found: /polls/30
+2021-05-05 19:27:44,005 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:27:44,005 django.request WARNING  Not Found: /polls/29
+2021-05-05 19:29:26,463 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:29:26,463 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:29:26,893 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:29:26,893 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:29:27,178 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:29:27,178 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:29:27,456 django.request WARNING  Bad Request: /admin/polls/32
+2021-05-05 19:29:27,456 django.request WARNING  Bad Request: /admin/polls/32
+2021-05-05 19:29:28,080 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:29:28,080 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:29:28,223 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:29:28,223 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:29:28,525 django.request WARNING  Bad Request: /admin/polls/33/questions
+2021-05-05 19:29:28,525 django.request WARNING  Bad Request: /admin/polls/33/questions
+2021-05-05 19:29:28,992 django.request WARNING  Bad Request: /admin/polls/33/questions
+2021-05-05 19:29:28,992 django.request WARNING  Bad Request: /admin/polls/33/questions
+2021-05-05 19:29:29,131 django.request WARNING  Bad Request: /admin/polls/33/questions
+2021-05-05 19:29:29,131 django.request WARNING  Bad Request: /admin/polls/33/questions
+2021-05-05 19:29:29,737 django.request WARNING  Not Found: /admin/polls/33/questions/12345
+2021-05-05 19:29:29,737 django.request WARNING  Not Found: /admin/polls/33/questions/12345
+2021-05-05 19:29:31,664 django.request WARNING  Not Found: /polls/36
+2021-05-05 19:29:31,664 django.request WARNING  Not Found: /polls/36
+2021-05-05 19:29:31,672 django.request WARNING  Not Found: /polls/36
+2021-05-05 19:29:31,672 django.request WARNING  Not Found: /polls/36
+2021-05-05 19:29:31,682 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:29:31,682 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:29:31,697 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:29:31,697 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:29:31,714 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:29:31,714 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:29:31,731 django.request WARNING  Not Found: /polls/35
+2021-05-05 19:29:31,731 django.request WARNING  Not Found: /polls/35
+2021-05-05 19:29:31,754 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:29:31,754 django.request WARNING  Not Found: /polls/34
+2021-05-05 19:39:11,706 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:39:11,706 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:39:55,577 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:39:55,577 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:44:21,960 django.request WARNING  Bad Request: /admin/polls/11
+2021-05-05 19:44:21,960 django.request WARNING  Bad Request: /admin/polls/11
+2021-05-05 19:44:37,532 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\admin.py changed, reloading.
+2021-05-05 19:44:38,311 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 19:53:54,465 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:53:54,465 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:55:50,747 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:55:50,747 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 19:55:51,175 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:55:51,175 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 19:55:51,460 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:55:51,460 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:55:51,742 django.request WARNING  Bad Request: /admin/polls/37
+2021-05-05 19:55:51,742 django.request WARNING  Bad Request: /admin/polls/37
+2021-05-05 19:55:52,383 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:55:52,383 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 19:55:52,530 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:55:52,530 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 19:55:52,833 django.request WARNING  Bad Request: /admin/polls/38/questions
+2021-05-05 19:55:52,833 django.request WARNING  Bad Request: /admin/polls/38/questions
+2021-05-05 19:55:53,305 django.request WARNING  Bad Request: /admin/polls/38/questions
+2021-05-05 19:55:53,305 django.request WARNING  Bad Request: /admin/polls/38/questions
+2021-05-05 19:55:53,444 django.request WARNING  Bad Request: /admin/polls/38/questions
+2021-05-05 19:55:53,444 django.request WARNING  Bad Request: /admin/polls/38/questions
+2021-05-05 19:55:54,047 django.request WARNING  Not Found: /admin/polls/38/questions/12345
+2021-05-05 19:55:54,047 django.request WARNING  Not Found: /admin/polls/38/questions/12345
+2021-05-05 19:55:55,994 django.request WARNING  Not Found: /polls/41
+2021-05-05 19:55:55,994 django.request WARNING  Not Found: /polls/41
+2021-05-05 19:55:56,001 django.request WARNING  Not Found: /polls/41
+2021-05-05 19:55:56,001 django.request WARNING  Not Found: /polls/41
+2021-05-05 19:55:56,010 django.request WARNING  Not Found: /polls/39
+2021-05-05 19:55:56,010 django.request WARNING  Not Found: /polls/39
+2021-05-05 19:55:56,027 django.request WARNING  Not Found: /polls/39
+2021-05-05 19:55:56,027 django.request WARNING  Not Found: /polls/39
+2021-05-05 19:55:56,043 django.request WARNING  Not Found: /polls/39
+2021-05-05 19:55:56,043 django.request WARNING  Not Found: /polls/39
+2021-05-05 19:55:56,066 django.request WARNING  Not Found: /polls/40
+2021-05-05 19:55:56,066 django.request WARNING  Not Found: /polls/40
+2021-05-05 19:55:56,081 django.request WARNING  Not Found: /polls/39
+2021-05-05 19:55:56,081 django.request WARNING  Not Found: /polls/39
+2021-05-05 20:02:10,698 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:02:10,698 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:02:11,121 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:02:11,121 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:02:11,400 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:02:11,400 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:02:11,693 django.request WARNING  Bad Request: /admin/polls/42
+2021-05-05 20:02:11,693 django.request WARNING  Bad Request: /admin/polls/42
+2021-05-05 20:02:12,321 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:02:12,321 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:02:12,462 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:02:12,462 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:02:12,787 django.request WARNING  Bad Request: /admin/polls/43/questions
+2021-05-05 20:02:12,787 django.request WARNING  Bad Request: /admin/polls/43/questions
+2021-05-05 20:02:13,255 django.request WARNING  Bad Request: /admin/polls/43/questions
+2021-05-05 20:02:13,255 django.request WARNING  Bad Request: /admin/polls/43/questions
+2021-05-05 20:02:13,396 django.request WARNING  Bad Request: /admin/polls/43/questions
+2021-05-05 20:02:13,396 django.request WARNING  Bad Request: /admin/polls/43/questions
+2021-05-05 20:02:13,997 django.request WARNING  Not Found: /admin/polls/43/questions/12345
+2021-05-05 20:02:13,997 django.request WARNING  Not Found: /admin/polls/43/questions/12345
+2021-05-05 20:02:15,899 django.request WARNING  Not Found: /polls/46
+2021-05-05 20:02:15,899 django.request WARNING  Not Found: /polls/46
+2021-05-05 20:02:15,906 django.request WARNING  Not Found: /polls/46
+2021-05-05 20:02:15,906 django.request WARNING  Not Found: /polls/46
+2021-05-05 20:02:15,914 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:02:15,914 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:02:15,929 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:02:15,929 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:02:15,945 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:02:15,945 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:02:15,966 django.request WARNING  Not Found: /polls/45
+2021-05-05 20:02:15,966 django.request WARNING  Not Found: /polls/45
+2021-05-05 20:02:15,982 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:02:15,982 django.request WARNING  Not Found: /polls/44
+2021-05-05 20:04:21,369 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:04:21,369 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:04:21,825 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:04:21,825 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:04:22,103 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:04:22,103 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:04:22,383 django.request WARNING  Bad Request: /admin/polls/47
+2021-05-05 20:04:22,383 django.request WARNING  Bad Request: /admin/polls/47
+2021-05-05 20:04:23,037 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:04:23,037 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:04:23,176 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:04:23,176 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:04:23,476 django.request WARNING  Bad Request: /admin/polls/48/questions
+2021-05-05 20:04:23,476 django.request WARNING  Bad Request: /admin/polls/48/questions
+2021-05-05 20:04:23,951 django.request WARNING  Bad Request: /admin/polls/48/questions
+2021-05-05 20:04:23,951 django.request WARNING  Bad Request: /admin/polls/48/questions
+2021-05-05 20:04:24,093 django.request WARNING  Bad Request: /admin/polls/48/questions
+2021-05-05 20:04:24,093 django.request WARNING  Bad Request: /admin/polls/48/questions
+2021-05-05 20:04:24,696 django.request WARNING  Not Found: /admin/polls/48/questions/12345
+2021-05-05 20:04:24,696 django.request WARNING  Not Found: /admin/polls/48/questions/12345
+2021-05-05 20:04:26,612 django.request WARNING  Not Found: /polls/51
+2021-05-05 20:04:26,612 django.request WARNING  Not Found: /polls/51
+2021-05-05 20:04:26,619 django.request WARNING  Not Found: /polls/51
+2021-05-05 20:04:26,619 django.request WARNING  Not Found: /polls/51
+2021-05-05 20:04:26,628 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:04:26,628 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:04:26,643 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:04:26,643 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:04:26,659 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:04:26,659 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:04:26,681 django.request WARNING  Not Found: /polls/50
+2021-05-05 20:04:26,681 django.request WARNING  Not Found: /polls/50
+2021-05-05 20:04:26,697 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:04:26,697 django.request WARNING  Not Found: /polls/49
+2021-05-05 20:05:38,584 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:05:38,584 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:05:39,008 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:05:39,008 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:05:39,292 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:05:39,292 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:05:39,576 django.request WARNING  Bad Request: /admin/polls/52
+2021-05-05 20:05:39,576 django.request WARNING  Bad Request: /admin/polls/52
+2021-05-05 20:05:40,198 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:05:40,198 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:05:40,341 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:05:40,341 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:05:40,662 django.request WARNING  Bad Request: /admin/polls/53/questions
+2021-05-05 20:05:40,662 django.request WARNING  Bad Request: /admin/polls/53/questions
+2021-05-05 20:05:41,140 django.request WARNING  Bad Request: /admin/polls/53/questions
+2021-05-05 20:05:41,140 django.request WARNING  Bad Request: /admin/polls/53/questions
+2021-05-05 20:05:41,278 django.request WARNING  Bad Request: /admin/polls/53/questions
+2021-05-05 20:05:41,278 django.request WARNING  Bad Request: /admin/polls/53/questions
+2021-05-05 20:05:41,897 django.request WARNING  Not Found: /admin/polls/53/questions/12345
+2021-05-05 20:05:41,897 django.request WARNING  Not Found: /admin/polls/53/questions/12345
+2021-05-05 20:05:43,852 django.request WARNING  Not Found: /polls/56
+2021-05-05 20:05:43,852 django.request WARNING  Not Found: /polls/56
+2021-05-05 20:05:43,859 django.request WARNING  Not Found: /polls/56
+2021-05-05 20:05:43,859 django.request WARNING  Not Found: /polls/56
+2021-05-05 20:05:43,869 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:05:43,869 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:05:43,886 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:05:43,886 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:05:43,902 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:05:43,902 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:05:43,922 django.request WARNING  Not Found: /polls/55
+2021-05-05 20:05:43,922 django.request WARNING  Not Found: /polls/55
+2021-05-05 20:05:43,940 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:05:43,940 django.request WARNING  Not Found: /polls/54
+2021-05-05 20:08:51,540 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:08:51,540 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:08:51,962 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:08:51,962 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:08:52,238 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:08:52,238 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:08:52,517 django.request WARNING  Bad Request: /admin/polls/57
+2021-05-05 20:08:52,517 django.request WARNING  Bad Request: /admin/polls/57
+2021-05-05 20:08:53,131 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:08:53,131 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:08:53,275 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:08:53,275 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:08:53,599 django.request WARNING  Bad Request: /admin/polls/58/questions
+2021-05-05 20:08:53,599 django.request WARNING  Bad Request: /admin/polls/58/questions
+2021-05-05 20:08:54,053 django.request WARNING  Bad Request: /admin/polls/58/questions
+2021-05-05 20:08:54,053 django.request WARNING  Bad Request: /admin/polls/58/questions
+2021-05-05 20:08:54,191 django.request WARNING  Bad Request: /admin/polls/58/questions
+2021-05-05 20:08:54,191 django.request WARNING  Bad Request: /admin/polls/58/questions
+2021-05-05 20:08:54,818 django.request WARNING  Not Found: /admin/polls/58/questions/12345
+2021-05-05 20:08:54,818 django.request WARNING  Not Found: /admin/polls/58/questions/12345
+2021-05-05 20:08:56,731 django.request WARNING  Not Found: /polls/61
+2021-05-05 20:08:56,731 django.request WARNING  Not Found: /polls/61
+2021-05-05 20:08:56,739 django.request WARNING  Not Found: /polls/61
+2021-05-05 20:08:56,739 django.request WARNING  Not Found: /polls/61
+2021-05-05 20:08:56,748 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:08:56,748 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:08:56,764 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:08:56,764 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:08:56,781 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:08:56,781 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:08:56,803 django.request WARNING  Not Found: /polls/60
+2021-05-05 20:08:56,803 django.request WARNING  Not Found: /polls/60
+2021-05-05 20:08:56,821 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:08:56,821 django.request WARNING  Not Found: /polls/59
+2021-05-05 20:10:30,328 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:10:30,328 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:10:30,766 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:10:30,766 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:10:31,043 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:10:31,043 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:10:31,321 django.request WARNING  Bad Request: /admin/polls/62
+2021-05-05 20:10:31,321 django.request WARNING  Bad Request: /admin/polls/62
+2021-05-05 20:10:31,991 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:10:31,991 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:10:32,129 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:10:32,129 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:10:32,426 django.request WARNING  Bad Request: /admin/polls/63/questions
+2021-05-05 20:10:32,426 django.request WARNING  Bad Request: /admin/polls/63/questions
+2021-05-05 20:10:32,918 django.request WARNING  Bad Request: /admin/polls/63/questions
+2021-05-05 20:10:32,918 django.request WARNING  Bad Request: /admin/polls/63/questions
+2021-05-05 20:10:33,058 django.request WARNING  Bad Request: /admin/polls/63/questions
+2021-05-05 20:10:33,058 django.request WARNING  Bad Request: /admin/polls/63/questions
+2021-05-05 20:10:33,655 django.request WARNING  Not Found: /admin/polls/63/questions/12345
+2021-05-05 20:10:33,655 django.request WARNING  Not Found: /admin/polls/63/questions/12345
+2021-05-05 20:10:35,588 django.request WARNING  Not Found: /polls/66
+2021-05-05 20:10:35,588 django.request WARNING  Not Found: /polls/66
+2021-05-05 20:10:35,595 django.request WARNING  Not Found: /polls/66
+2021-05-05 20:10:35,595 django.request WARNING  Not Found: /polls/66
+2021-05-05 20:10:35,604 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:10:35,604 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:10:35,618 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:10:35,618 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:10:35,635 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:10:35,635 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:10:35,656 django.request WARNING  Not Found: /polls/65
+2021-05-05 20:10:35,656 django.request WARNING  Not Found: /polls/65
+2021-05-05 20:10:35,673 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:10:35,673 django.request WARNING  Not Found: /polls/64
+2021-05-05 20:11:34,203 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:11:34,203 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:11:34,629 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:11:34,629 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:11:34,915 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:11:34,915 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:11:35,191 django.request WARNING  Bad Request: /admin/polls/67
+2021-05-05 20:11:35,191 django.request WARNING  Bad Request: /admin/polls/67
+2021-05-05 20:11:35,808 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:11:35,808 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:11:35,952 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:11:35,952 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:11:36,246 django.request WARNING  Bad Request: /admin/polls/68/questions
+2021-05-05 20:11:36,246 django.request WARNING  Bad Request: /admin/polls/68/questions
+2021-05-05 20:11:36,701 django.request WARNING  Bad Request: /admin/polls/68/questions
+2021-05-05 20:11:36,701 django.request WARNING  Bad Request: /admin/polls/68/questions
+2021-05-05 20:11:36,842 django.request WARNING  Bad Request: /admin/polls/68/questions
+2021-05-05 20:11:36,842 django.request WARNING  Bad Request: /admin/polls/68/questions
+2021-05-05 20:11:37,462 django.request WARNING  Not Found: /admin/polls/68/questions/12345
+2021-05-05 20:11:37,462 django.request WARNING  Not Found: /admin/polls/68/questions/12345
+2021-05-05 20:11:39,370 django.request WARNING  Not Found: /polls/71
+2021-05-05 20:11:39,370 django.request WARNING  Not Found: /polls/71
+2021-05-05 20:11:39,378 django.request WARNING  Not Found: /polls/71
+2021-05-05 20:11:39,378 django.request WARNING  Not Found: /polls/71
+2021-05-05 20:11:39,387 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:11:39,387 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:11:39,403 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:11:39,403 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:11:39,419 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:11:39,419 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:11:39,441 django.request WARNING  Not Found: /polls/70
+2021-05-05 20:11:39,441 django.request WARNING  Not Found: /polls/70
+2021-05-05 20:11:39,457 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:11:39,457 django.request WARNING  Not Found: /polls/69
+2021-05-05 20:18:04,776 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:18:04,776 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:18:05,194 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:18:05,194 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:18:05,469 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:18:05,469 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:18:05,753 django.request WARNING  Bad Request: /admin/polls/72
+2021-05-05 20:18:05,753 django.request WARNING  Bad Request: /admin/polls/72
+2021-05-05 20:18:06,367 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:18:06,367 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:18:06,505 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:18:06,505 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:18:06,813 django.request WARNING  Bad Request: /admin/polls/73/questions
+2021-05-05 20:18:06,813 django.request WARNING  Bad Request: /admin/polls/73/questions
+2021-05-05 20:18:07,275 django.request WARNING  Bad Request: /admin/polls/73/questions
+2021-05-05 20:18:07,275 django.request WARNING  Bad Request: /admin/polls/73/questions
+2021-05-05 20:18:07,414 django.request WARNING  Bad Request: /admin/polls/73/questions
+2021-05-05 20:18:07,414 django.request WARNING  Bad Request: /admin/polls/73/questions
+2021-05-05 20:18:08,059 django.request WARNING  Not Found: /admin/polls/73/questions/12345
+2021-05-05 20:18:08,059 django.request WARNING  Not Found: /admin/polls/73/questions/12345
+2021-05-05 20:18:09,994 django.request WARNING  Not Found: /polls/76
+2021-05-05 20:18:09,994 django.request WARNING  Not Found: /polls/76
+2021-05-05 20:18:10,001 django.request WARNING  Not Found: /polls/76
+2021-05-05 20:18:10,001 django.request WARNING  Not Found: /polls/76
+2021-05-05 20:18:10,011 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:18:10,011 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:18:10,027 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:18:10,027 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:18:10,043 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:18:10,043 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:18:10,064 django.request WARNING  Not Found: /polls/75
+2021-05-05 20:18:10,064 django.request WARNING  Not Found: /polls/75
+2021-05-05 20:18:10,081 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:18:10,081 django.request WARNING  Not Found: /polls/74
+2021-05-05 20:19:59,969 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:19:59,969 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:20:00,411 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:20:00,411 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:20:00,697 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:20:00,697 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:20:00,975 django.request WARNING  Bad Request: /admin/polls/77
+2021-05-05 20:20:00,975 django.request WARNING  Bad Request: /admin/polls/77
+2021-05-05 20:20:01,604 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:20:01,604 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:20:01,746 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:20:01,746 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:20:02,055 django.request WARNING  Bad Request: /admin/polls/78/questions
+2021-05-05 20:20:02,055 django.request WARNING  Bad Request: /admin/polls/78/questions
+2021-05-05 20:20:02,535 django.request WARNING  Bad Request: /admin/polls/78/questions
+2021-05-05 20:20:02,535 django.request WARNING  Bad Request: /admin/polls/78/questions
+2021-05-05 20:20:02,674 django.request WARNING  Bad Request: /admin/polls/78/questions
+2021-05-05 20:20:02,674 django.request WARNING  Bad Request: /admin/polls/78/questions
+2021-05-05 20:20:03,270 django.request WARNING  Not Found: /admin/polls/78/questions/12345
+2021-05-05 20:20:03,270 django.request WARNING  Not Found: /admin/polls/78/questions/12345
+2021-05-05 20:20:05,182 django.request WARNING  Not Found: /polls/81
+2021-05-05 20:20:05,182 django.request WARNING  Not Found: /polls/81
+2021-05-05 20:20:05,189 django.request WARNING  Not Found: /polls/81
+2021-05-05 20:20:05,189 django.request WARNING  Not Found: /polls/81
+2021-05-05 20:20:05,198 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:20:05,198 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:20:05,214 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:20:05,214 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:20:05,230 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:20:05,230 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:20:05,254 django.request WARNING  Not Found: /polls/80
+2021-05-05 20:20:05,254 django.request WARNING  Not Found: /polls/80
+2021-05-05 20:20:05,270 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:20:05,270 django.request WARNING  Not Found: /polls/79
+2021-05-05 20:21:27,610 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:21:27,610 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:21:28,042 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:21:28,042 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:21:28,320 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:21:28,320 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:21:28,598 django.request WARNING  Bad Request: /admin/polls/82
+2021-05-05 20:21:28,598 django.request WARNING  Bad Request: /admin/polls/82
+2021-05-05 20:21:29,233 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:21:29,233 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:21:29,372 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:21:29,372 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:21:29,677 django.request WARNING  Bad Request: /admin/polls/83/questions
+2021-05-05 20:21:29,677 django.request WARNING  Bad Request: /admin/polls/83/questions
+2021-05-05 20:21:30,138 django.request WARNING  Bad Request: /admin/polls/83/questions
+2021-05-05 20:21:30,138 django.request WARNING  Bad Request: /admin/polls/83/questions
+2021-05-05 20:21:30,277 django.request WARNING  Bad Request: /admin/polls/83/questions
+2021-05-05 20:21:30,277 django.request WARNING  Bad Request: /admin/polls/83/questions
+2021-05-05 20:21:30,888 django.request WARNING  Not Found: /admin/polls/83/questions/12345
+2021-05-05 20:21:30,888 django.request WARNING  Not Found: /admin/polls/83/questions/12345
+2021-05-05 20:21:32,774 django.request WARNING  Not Found: /polls/86
+2021-05-05 20:21:32,774 django.request WARNING  Not Found: /polls/86
+2021-05-05 20:21:32,780 django.request WARNING  Not Found: /polls/86
+2021-05-05 20:21:32,780 django.request WARNING  Not Found: /polls/86
+2021-05-05 20:21:32,789 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:21:32,789 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:21:32,804 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:21:32,804 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:21:32,821 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:21:32,821 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:21:32,848 django.request WARNING  Not Found: /polls/85
+2021-05-05 20:21:32,848 django.request WARNING  Not Found: /polls/85
+2021-05-05 20:21:32,896 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:21:32,896 django.request WARNING  Not Found: /polls/84
+2021-05-05 20:23:11,970 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:23:11,970 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:23:12,398 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:23:12,398 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:23:12,679 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:23:12,679 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:23:12,959 django.request WARNING  Bad Request: /admin/polls/87
+2021-05-05 20:23:12,959 django.request WARNING  Bad Request: /admin/polls/87
+2021-05-05 20:23:13,595 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:23:13,595 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:23:13,738 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:23:13,738 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:23:14,038 django.request WARNING  Bad Request: /admin/polls/88/questions
+2021-05-05 20:23:14,038 django.request WARNING  Bad Request: /admin/polls/88/questions
+2021-05-05 20:23:14,527 django.request WARNING  Bad Request: /admin/polls/88/questions
+2021-05-05 20:23:14,527 django.request WARNING  Bad Request: /admin/polls/88/questions
+2021-05-05 20:23:14,667 django.request WARNING  Bad Request: /admin/polls/88/questions
+2021-05-05 20:23:14,667 django.request WARNING  Bad Request: /admin/polls/88/questions
+2021-05-05 20:23:15,283 django.request WARNING  Not Found: /admin/polls/88/questions/12345
+2021-05-05 20:23:15,283 django.request WARNING  Not Found: /admin/polls/88/questions/12345
+2021-05-05 20:23:17,219 django.request WARNING  Not Found: /polls/91
+2021-05-05 20:23:17,219 django.request WARNING  Not Found: /polls/91
+2021-05-05 20:23:17,226 django.request WARNING  Not Found: /polls/91
+2021-05-05 20:23:17,226 django.request WARNING  Not Found: /polls/91
+2021-05-05 20:23:17,234 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:23:17,234 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:23:17,251 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:23:17,251 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:23:17,269 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:23:17,269 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:23:17,291 django.request WARNING  Not Found: /polls/90
+2021-05-05 20:23:17,291 django.request WARNING  Not Found: /polls/90
+2021-05-05 20:23:17,308 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:23:17,308 django.request WARNING  Not Found: /polls/89
+2021-05-05 20:24:04,260 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:24:04,260 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:24:04,688 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:24:04,688 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:24:04,965 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:04,965 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:05,269 django.request WARNING  Bad Request: /admin/polls/92
+2021-05-05 20:24:05,269 django.request WARNING  Bad Request: /admin/polls/92
+2021-05-05 20:24:05,900 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:05,900 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:06,042 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:24:06,042 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:24:06,348 django.request WARNING  Bad Request: /admin/polls/93/questions
+2021-05-05 20:24:06,348 django.request WARNING  Bad Request: /admin/polls/93/questions
+2021-05-05 20:24:06,823 django.request WARNING  Bad Request: /admin/polls/93/questions
+2021-05-05 20:24:06,823 django.request WARNING  Bad Request: /admin/polls/93/questions
+2021-05-05 20:24:06,962 django.request WARNING  Bad Request: /admin/polls/93/questions
+2021-05-05 20:24:06,962 django.request WARNING  Bad Request: /admin/polls/93/questions
+2021-05-05 20:24:07,556 django.request WARNING  Not Found: /admin/polls/93/questions/12345
+2021-05-05 20:24:07,556 django.request WARNING  Not Found: /admin/polls/93/questions/12345
+2021-05-05 20:24:09,513 django.request WARNING  Not Found: /polls/96
+2021-05-05 20:24:09,513 django.request WARNING  Not Found: /polls/96
+2021-05-05 20:24:09,520 django.request WARNING  Not Found: /polls/96
+2021-05-05 20:24:09,520 django.request WARNING  Not Found: /polls/96
+2021-05-05 20:24:09,529 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:09,529 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:09,545 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:09,545 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:09,561 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:09,561 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:09,583 django.request WARNING  Not Found: /polls/95
+2021-05-05 20:24:09,583 django.request WARNING  Not Found: /polls/95
+2021-05-05 20:24:09,599 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:09,599 django.request WARNING  Not Found: /polls/94
+2021-05-05 20:24:47,511 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 20:24:52,339 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:24:52,339 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:24:52,768 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:24:52,768 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:24:53,068 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:53,068 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:53,367 django.request WARNING  Bad Request: /admin/polls/97
+2021-05-05 20:24:53,367 django.request WARNING  Bad Request: /admin/polls/97
+2021-05-05 20:24:53,994 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:53,994 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:24:54,133 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:24:54,133 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:24:54,439 django.request WARNING  Bad Request: /admin/polls/98/questions
+2021-05-05 20:24:54,439 django.request WARNING  Bad Request: /admin/polls/98/questions
+2021-05-05 20:24:54,907 django.request WARNING  Bad Request: /admin/polls/98/questions
+2021-05-05 20:24:54,907 django.request WARNING  Bad Request: /admin/polls/98/questions
+2021-05-05 20:24:55,049 django.request WARNING  Bad Request: /admin/polls/98/questions
+2021-05-05 20:24:55,049 django.request WARNING  Bad Request: /admin/polls/98/questions
+2021-05-05 20:24:55,655 django.request WARNING  Not Found: /admin/polls/98/questions/12345
+2021-05-05 20:24:55,655 django.request WARNING  Not Found: /admin/polls/98/questions/12345
+2021-05-05 20:24:57,624 django.request WARNING  Not Found: /polls/101
+2021-05-05 20:24:57,624 django.request WARNING  Not Found: /polls/101
+2021-05-05 20:24:57,631 django.request WARNING  Not Found: /polls/101
+2021-05-05 20:24:57,631 django.request WARNING  Not Found: /polls/101
+2021-05-05 20:24:57,640 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:24:57,640 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:24:57,657 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:24:57,657 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:24:57,675 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:24:57,675 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:24:57,693 django.request WARNING  Not Found: /polls/100
+2021-05-05 20:24:57,693 django.request WARNING  Not Found: /polls/100
+2021-05-05 20:24:57,712 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:24:57,712 django.request WARNING  Not Found: /polls/99
+2021-05-05 20:27:12,591 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:27:12,591 django.request WARNING  Unauthorized: /admin/polls
+2021-05-05 20:27:13,019 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:27:13,019 django.request WARNING  Bad Request: /admin/polls
+2021-05-05 20:27:13,300 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:27:13,300 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:27:13,576 django.request WARNING  Bad Request: /admin/polls/102
+2021-05-05 20:27:13,576 django.request WARNING  Bad Request: /admin/polls/102
+2021-05-05 20:27:14,193 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:27:14,193 django.request WARNING  Not Found: /admin/polls/98765
+2021-05-05 20:27:14,338 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:27:14,338 django.request WARNING  Not Found: /admin/polls/12345/questions
+2021-05-05 20:27:14,645 django.request WARNING  Bad Request: /admin/polls/103/questions
+2021-05-05 20:27:14,645 django.request WARNING  Bad Request: /admin/polls/103/questions
+2021-05-05 20:27:15,094 django.request WARNING  Bad Request: /admin/polls/103/questions
+2021-05-05 20:27:15,094 django.request WARNING  Bad Request: /admin/polls/103/questions
+2021-05-05 20:27:15,240 django.request WARNING  Bad Request: /admin/polls/103/questions
+2021-05-05 20:27:15,240 django.request WARNING  Bad Request: /admin/polls/103/questions
+2021-05-05 20:27:15,860 django.request WARNING  Not Found: /admin/polls/103/questions/12345
+2021-05-05 20:27:15,860 django.request WARNING  Not Found: /admin/polls/103/questions/12345
+2021-05-05 20:27:17,931 django.request WARNING  Not Found: /polls/106
+2021-05-05 20:27:17,931 django.request WARNING  Not Found: /polls/106
+2021-05-05 20:27:17,939 django.request WARNING  Not Found: /polls/106
+2021-05-05 20:27:17,939 django.request WARNING  Not Found: /polls/106
+2021-05-05 20:27:17,948 django.request WARNING  Not Found: /polls/104
+2021-05-05 20:27:17,948 django.request WARNING  Not Found: /polls/104
+2021-05-05 20:27:17,976 django.request WARNING  Not Found: /polls/104
+2021-05-05 20:27:17,976 django.request WARNING  Not Found: /polls/104
+2021-05-05 20:27:17,993 django.request WARNING  Not Found: /polls/104
+2021-05-05 20:27:17,993 django.request WARNING  Not Found: /polls/104
+2021-05-05 20:27:18,017 django.request WARNING  Not Found: /polls/105
+2021-05-05 20:27:18,017 django.request WARNING  Not Found: /polls/105
+2021-05-05 20:27:18,034 django.request WARNING  Not Found: /polls/104
+2021-05-05 20:27:18,034 django.request WARNING  Not Found: /polls/104
+2021-05-05 21:08:53,927 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 21:08:54,860 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 21:08:56,649 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:08:56,649 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:09:39,915 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 21:09:40,803 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 21:09:41,107 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 21:09:41,107 django.request WARNING  Bad Request: /pollsByUser/1000
+2021-05-05 21:09:41,318 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:09:41,318 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:09:55,213 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 21:09:56,061 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 21:09:56,654 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:09:56,654 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:11:49,561 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 21:11:50,377 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 21:11:51,536 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:11:51,536 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:12:51,431 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:12:51,431 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:13:04,925 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 21:13:05,777 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 21:13:06,537 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:13:06,537 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:13:53,696 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 21:13:54,577 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 21:13:56,936 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:13:56,936 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:15:09,951 django.utils.autoreload INFO     C:\Users\vilyu\Documents\python\pollapp\pollapp\backend\backend\views\user.py changed, reloading.
+2021-05-05 21:15:10,795 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2021-05-05 21:15:12,094 django.request WARNING  Not Found: /favicon.ico
+2021-05-05 21:15:12,094 django.request WARNING  Not Found: /favicon.ico
